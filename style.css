@@ -1,0 +1,118 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 50px 0;
+        font-size: 50px;
+      }
+
+      .searchDiv {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .searchDiv form {
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"] {
+        width: calc(100% - 90px);
+        padding: 8px;
+        margin-right: 10px;
+        border: 1px solid #4a4a4a;
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #c711fe;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #8900b3;
+      }
+
+      .container {
+        max-width: auto;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      }
+
+      .script-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .script-card {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+      }
+
+      .script-card:hover {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+
+      .script-card img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      .script-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .script-card p {
+        color: #fff;
+      }
+
+      .script-card a {
+        display: block;
+        padding: 8px 16px;
+        margin-top: 10px;
+        background-color: #c711fe;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .script-card a:hover {
+        background-color: #8400ac;
+      }
+
+      @media (min-width: 768px) {
+        .script-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .script-card {
+          max-width: calc(20% - 20px);
+        }
+        }

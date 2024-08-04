@@ -1,0 +1,134 @@
+ <!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title>Xiter Hub</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Xiter Hub | Copy Script"
+    />
+    <meta name="keywords" content="Anime, Keysystem, Roblox, Ads, Software" />
+    <meta name="author" content="XiterDev7" />
+    <link rel="stylesheet" href="script.css" />
+    <script
+      data-cfasync="false"
+      src=""
+    ></script>
+    <script
+      type="text/javascript"
+      src=""
+    ></script>
+  </head>
+  <body>
+    <div id="particles-bg"></div>
+    <div class="device-notification">
+      <a class="device-notification--logo" href="">
+        <img src="" alt="" />
+      </a>
+      <p class="device-notification--message">
+      </p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header">
+              <a class="header--logo" href="/">
+                <img
+                  style="width: 60px"
+                  src="XiterWare.png"
+                  alt="logo"
+                />
+              </a>
+            </header>
+            <ul class="l-main-content main-content">
+              <li class="l-section section--is-active">
+                <div class="work">
+                  <div class="about-page">
+                    <h2>
+                      Xiter
+                      <span class="different-color-header-text">Hub</span>
+                    </h2>
+                    <p
+                      style="
+                        font-size: large;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                      "
+                    >
+                     To Copy The Script, Press The "Copy Script" Button
+                    </p>
+                    <input
+                      id="keyTextbox"
+                      type="text"
+                      value=loadstring(game:HttpGet("https://rentry.co/XiterHub/raw"))()
+                      readonly
+                      style="
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #9b5de5;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        margin-top: 10px;
+                        box-sizing: border-box;
+                        background-color: #181818;
+                        color: #9b5de5;
+                        text-align: center;
+                        margin-bottom: 20px;
+                      "
+                    />
+
+                    <button
+                      id="copyButton"
+                      onclick="copyScript()"
+                      style="
+                        background-color: purple;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        margin-left: 5px; /* Add margin */
+                      "
+                    >
+                      Copy Script
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src=""></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src=""><\/script>'
+        );
+
+      function copyScript() {
+        var keyTextbox = document.getElementById("keyTextbox");
+        keyTextbox.select();
+        document.execCommand("copy");
+
+        var copyButton = document.getElementById("copyButton");
+        copyButton.textContent = "Copied";
+
+        setTimeout(function () {
+          copyButton.textContent = "Copy Script";
+        }, 1000);
+      }
+    </script>
+
+    <script type="text/javascript" src="JavaScript1.js"></script>
+    <script type="text/javascript" src="JavaScript2.js"></script>
+    <script src="JavaScript3.js"></script>
+    <script src="JavaScript4.js"></script>
+  </body>
+</html>
